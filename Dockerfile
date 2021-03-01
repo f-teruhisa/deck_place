@@ -18,4 +18,4 @@ RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 
-CMD ["rais", "server", "-b", "0.0.0.0"]l
+CMD ["rais", "server", "-b", "0.0.0.0"]
