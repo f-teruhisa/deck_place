@@ -16,3 +16,6 @@ routes:
 
 rubocop:
 	docker-compose run --rm web bundle exec rubocop -a ${ARG}
+
+rspec:
+	docker-compose run --rm web bundle exec rspec ${ARG}
