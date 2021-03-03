@@ -51,6 +51,9 @@ group :development do
   # Rspec
   gem 'factory_bot_rails'
   gem 'rspec-rails'
+
+  # static analysis tool which checks for security vulnerabilities
+  gem 'brakeman'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

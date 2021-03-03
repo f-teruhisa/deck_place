@@ -19,3 +19,6 @@ rubocop:
 
 rspec:
 	docker-compose run --rm web bundle exec rspec ${ARG}
+
+brakeman:
+	docker-compose run --rm web bundle exec brakeman ${ARG}
