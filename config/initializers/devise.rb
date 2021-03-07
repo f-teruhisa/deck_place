@@ -278,7 +278,7 @@ Devise.setup do |config|
                   Rails.application.credentials.google[:client_id],
                   Rails.application.credentials.google[:client_secret],
                   scope: 'email',
-                  redirect_uri: "http://localhost:3000/users/auth/google_oauth2"
+                  redirect_uri: "http://localhost:3000/users/auth/google_oauth2/callback"
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

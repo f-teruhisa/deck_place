@@ -38,12 +38,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
       t.string   :unlock_token # Only if unlock strategy is :email or :both
       t.datetime :locked_at
 
-      ## User Info
-      t.string :name
-      t.string :image
-
       # Columns required by this application
       t.integer :app_id, default: nil, null: true, comment: 'Player ID in DuelMasters-Plays app'
+      t.string :app_name, default: nil, null: true, comment: 'Player Name in DuelMasters-Plays app'
 
       t.timestamps null: false
     end

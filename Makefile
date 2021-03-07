@@ -11,6 +11,12 @@ up:
 bundle:
 	docker-compose run --rm web bundle install
 
+console:
+	docker-compose run --rm web rails console
+
+migrate:
+	docker-compose run --rm web rails db:migrate
+
 routes:
 	docker-compose run --rm web rails routes
 

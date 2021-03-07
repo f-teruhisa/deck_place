@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-# rubocop:disable Metrics/BlockLength
 ActiveRecord::Schema.define(version: 20_210_306_101_410) do
   create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,9 +26,8 @@ ActiveRecord::Schema.define(version: 20_210_306_101_410) do
     t.integer "failed_attempts", default: 0, null: false
     t.string "unlock_token"
     t.datetime "locked_at"
-    t.string "name"
-    t.string "image"
     t.integer "app_id", comment: "Player ID in DuelMasters-Plays app"
+    t.string "app_name", comment: "Player Name in DuelMasters-Plays app"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
@@ -39,4 +37,3 @@ ActiveRecord::Schema.define(version: 20_210_306_101_410) do
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 end
-# rubocop:enable Metrics/BlockLength
