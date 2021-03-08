@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # devise for Authentication
 gem 'devise', git: "https://github.com/heartcombo/devise"
+gem 'devise-i18n'
+gem 'devise-i18n-views'
 gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
 
