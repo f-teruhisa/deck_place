@@ -68,6 +68,9 @@ group :development do
 
   # Detect N+1(slow query)
   gem 'bullet'
+
+  # Anotation for Model
+  gem 'annotate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
