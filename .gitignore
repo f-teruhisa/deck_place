@@ -297,3 +297,9 @@ build-iPhoneSimulator/
 # Sonarlint plugin
 
 # End of https://www.toptal.com/developers/gitignore/api/rails,ruby,jetbrains+all,macos,rubymine+all
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

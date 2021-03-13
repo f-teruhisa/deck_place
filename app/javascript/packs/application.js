@@ -5,9 +5,13 @@
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
+import "core-js";
+import "regenerator-runtime/runtime";
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import TurbolinksAdapter from 'vue-turbolinks';
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+Vue.use(TurbolinksAdapter);
