@@ -45,6 +45,9 @@ group :development, :test do
 
   # Rspec
   gem 'factory_bot_rails'
+
+  # Seed data
+  gem 'seed-fu'
 end
 
 group :development do

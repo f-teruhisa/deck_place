@@ -28,3 +28,6 @@ rspec:
 
 brakeman:
 	docker-compose run --rm web bundle exec brakeman ${ARG}
+
+seed:
+	docker-compose run --rm web rails db:seed_fu
